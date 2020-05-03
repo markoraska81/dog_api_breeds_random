@@ -1,0 +1,171 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    background: #eee;
+    box-shadow: 0 0 4px 0;
+}
+
+.navbar .navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.navbar .navbar-container h2 {
+    padding: 5px 30px;
+    text-align: center;
+    border: solid 1px darkgrey;
+    border-radius: 5px;
+    width: 250px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    background: #eeeeee;
+}
+
+.navbar .navbar-container img {
+    width: 80px;
+}
+
+main {
+    text-align: center;
+}
+
+main #load {
+  display: none;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin: 100px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.main-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+.main-wrapper #dogs-form {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.main-wrapper #dogs-form #breeds {
+    width: 240px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    outline: none;
+}
+
+.main-wrapper #dogs-form #image-count {
+    display: none;
+}
+.main-wrapper #dogs-form #button-load {
+    border-radius: 5px;
+    padding: 6px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    background: #ff6347;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.random-button {
+    margin: 30px auto;
+    padding: 5px;
+    color: #fff;
+    width: 50px;
+    font-size: 20px;
+    background: tomato;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0;
+    padding: 10px;
+}
+
+
+.image-container h3 {
+    text-align: center;
+    border: solid 1px #a9a9a9;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    background: #eeeeee;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.image-container h3 span {
+    text-transform: capitalize;
+}
+
+.image-container .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container .image .dog {
+      margin-right: 20px;
+      width: 18%;
+      height: 280px;
+}
+
+.image-container .image .dog:last-child {
+    margin-right: 0;
+}
+
+
+.footer-container {
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-container span {
+    font-size: 16px;
+    font-family: sans-serif;
+    border: solid 1px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 0;
+    background-color: #000;
+    color: #fff;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Dog Api</title>
+</head>
+<body>
+  <nav class="navbar">
+      <div class="navbar-container">
+          <img src="img/logo.png" />
+          <h2>Rase pasa</h2>
+          <!-- <section class="search-container">
+              <input class="search"  type="text" placeholder="search dog..." />
+              <button class="button"><i class="fa fa-search"></i></button>
+          </section> -->
+          <img src="img/logo.png" />
+      </div>
+  </nav>
+  <main>
+      <div class="main-wrapper">
+          <form id="dogs-form" action="#">
+               <select id="breeds" name="breeds"></select>
+               <input id="image-count" type="number" value="5">
+               <input type="button" id="button-load" value="Pogledaj sliku!">
+          </form>
+      </div>
+      <div class="image-container">
+          <h3>Rasa: <span class="breed-name"></span></h3>
+          <div class="loader-container">
+              <div id="load"></div>
+          </div>
+          <div id="dog-image">
+            <section class="image"></section>
+          </div>
+     </div>
+  </main>
+  <footer>
+      <div class="footer-container">
+          <span>© 2020 Copyright Marko Milenkovic</span>
+      </div>
+  </footer>
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+</html>
